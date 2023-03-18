@@ -6,6 +6,10 @@
 	font-family: 'Montserrat-Regular'; 
 	src: url(../fonts/Montserrat-Regular.ttf); 
 }
+@font-face {
+	font-family: 'Montserrat-Bold'; 
+	src: url(../fonts/Montserrat-Bold.ttf); 
+}
 
 .header__main{
     width: 100%;
@@ -65,10 +69,225 @@
     display: flex;
     letter-spacing: 4px;
     line-height: 38px;
+    font-weight: 500;
 }
 
 .logo__description img{
     max-width: 379px;
     max-height: 379px;
     margin-right: 80px;
+}
+
+.info__line{
+    width: 100%;
+    height: 400px;
+    background-color: #66FCF1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #1F2833;
+}
+
+.info__line__block:nth-child(1){
+    margin-left: 80px;
+    margin-right: 10%;
+}
+
+.info__line__block:nth-child(2){
+    margin-right: 80px;
+    margin-left: 10%;
+}
+
+.info__line__block div{
+    display: flex;
+    align-items: center;
+}
+
+.info__line__block img{
+    width: 52px;
+    height: 52px;
+}
+
+.info__line__block h2{
+    font-size: 40px;
+    margin-left: 32px;
+    line-height: 35px;
+}
+
+.info__line__block p{
+    font-size: 16px;
+    margin-top: 15px;
+    max-width: 522px;
+}
+
+.about__container{
+    width: 100%;
+    height: fit-content;
+    padding-top: 80px;
+    padding-bottom: 275px;
+    background-color: #F5F5F5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about__container img{
+    width: 100%;
+    max-width: 419px;
+    max-height: auto;
+}
+
+.about__container p{
+    max-width: 764px;
+    font-size: 20px;
+    line-height: 170%;
+    letter-spacing: 0.1em;
+    color: #1F2833;
+}
+
+.about__container div:nth-child(1){
+    margin-right: 13%;
+    margin-left: 80px;
+}
+.about__container div:nth-child(2){
+    margin-right: 80px;
+}
+
+.about__container div p:nth-child(2){
+    margin-bottom: 91px;
+}
+
+.about__container h2{
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 144.9%;
+    color: #1F2833;
+    margin-bottom: 141px;
+}
+
+.application__container{
+    height: fit-content;
+    min-height: 804px;
+    background-image: url(../media/background.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    justify-content: center;
+}
+
+.application__sub{
+    max-width: 630px;
+    max-height: fit-content;
+    max-height: 300px;
+    background-color: #66FCF1;
+    border-radius: 20px;
+    color: #1F2833;
+    display: flex;
+    flex-direction: column;
+    margin-right: 45%;
+    position: absolute;
+    top: -150px;
+
+    /* display: none; */
+}
+
+.application__sub h2{
+    font-family: 'Montserrat-Medium';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 144.9%;
+    margin-top: 69px;
+    margin-left: 52px;
+    margin-bottom: 21px;
+    margin-right: 20px;
+}
+
+.application__sub p{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 144.9%;
+    font-family: 'Montserrat-Bold';
+    margin-left: 48px;
+    margin-right: 93px;
+    margin-bottom: 20px;
+}
+
+.app__link{
+    max-width: 239px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1F2833;
+    color: #66FCF1;
+    font-size: 20px;
+    line-height: 144.9%;
+    border-radius: 10px;
+    margin-left: 53px;
+    margin-bottom: 74px;
+}
+
+.application__description{
+    height: 100%;
+    max-width: 1920px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.application__description ul{
+    width: 100%;
+    margin-left: 70px;
+    margin-right: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 200px;
+}
+
+.application__description li{
+    color: #fff;
+    font-size: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 45px;
+    margin-right: 45px;
+    margin-bottom: 100px;
+}
+
+.application__description li::before{
+    content: "01";
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    border: 1px solid #66FCF1;
+    color: #66FCF1;
+    font-size: 26px;
+    font-family: 'Montserrat-Bold';
+    margin-right: 30px;
+}
+
+.application__description h3{
+    width: 100%;
+    color: #66FCF1;
+    font-size: 30px;
+    margin-bottom: 28px;
+    flex-basis: 100%;
+}
+
+.application__description p{
+    width: 592px;
+    color: #66FCF1;
+    font-size: 15px;
 }
