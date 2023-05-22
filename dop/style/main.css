@@ -56,6 +56,27 @@ ol,ul{
 
 /* Componets */
 
+
+.blue__link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Montserrat-SemiBold';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 144.9%;
+    text-align: center;
+    letter-spacing: 0.1em;
+    padding: 4px 12px;
+    border-radius: 10px;
+    background-color: #66FCF1;
+    transition: 0.2s ease-in-out;
+}
+.blue__link:hover{
+    box-shadow: 2px 2px 3px 1px #1F2833;
+}
+
 .wrapper{
     display: flex;
     flex-direction: column;

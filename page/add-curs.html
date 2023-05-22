@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../dop/style/main.css">
+    <link rel="stylesheet" href="../dop/style/add-curs.css">
+    <title>Создание курса</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header__container">
+                <div class="logo__container">
+                    <h1>
+                        <a href="../index.html"><img class="logo__img" src="../dop/media/logo.png" alt="proCurs"></a>
+                        <a href="../index.html"><span>Pro</span> Curs</a>
+                    </h1>
+                </div>
+                <nav class="header__nav">
+                    <ul>
+                        <li><a href="../index.html">О центре</a></li>
+                        <li><a href="catalog.html">Курсы</a></li>
+                        <li><a href="personal.html"><img src="../dop/media/user.png" alt="personal"></a></li>
+                        <li><a href="FAQ.html"><img src="../dop/media/search.png" alt="search"></a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main class="main">
+            <div class="container">
+                <div class="title__page">
+                    <h2>
+                        Добавление нового курса
+                    </h2>
+                </div>
+
+                <form class="add-curs__form" action="addCurs.php" method="get">
+                    <div class="add-curs__section">
+                        <label for="nameCurs">
+                            Название
+                        </label>
+                        <input type="text" id="nameCurs" name="nameCurs">
+                    </div>
+                    <div class="add-curs__section">
+                        <label for="startCurs">
+                            Начало курса
+                        </label>
+                        <input type="date" id="startCurs" name="startCurs">
+                    </div>
+                    <div class="add-curs__section">
+                        <label for="finishCurs">
+                            Окончание курса
+                        </label>
+                        <input type="datetime" id="finishCurs" name="finishCurs">
+                    </div>
+                    <div class="add-curs__section">
+                        <label for="descCurs">
+                            Описание
+                        </label>
+                        <input type="text" id="descCurs" name="descCurs">
+                    </div>
+                    <div class="add-curs__section">
+                        <label for="duractionCurs">
+                            Длительность курса
+                        </label>
+                        <input type="text" id="duractionCurs" name="duractionCurs">
+                    </div>
+                    <div class="add-curs__section">
+                        <label for="themsCurs">
+                            Темы курса
+                        </label>
+                        <input type="text" id="themsCurs" name="themsCurs">
+                    </div>
+
+                    <div class="file__seection">
+                        <div class="acardion__container">
+                            <details>
+                                <summary>Как получить доступ к материалам после оплаты?</summary>
+                                <div>
+                                    <p class="title">
+                                        Ответ на вопрос
+                                    </p>
+                                </div>
+                                <div>
+                            </details>
+                            <details>
+                                <summary>Не могу найти добавленные курсы, где они находятся?</summary>
+                                <div>
+                                    <p class="title">
+                                        Ответ на вопрос
+                                    </p>
+                                </div>
+                            </details>
+                            <details>
+                                <summary>Как долго сохраняется доступ к курсам?</summary>
+                                <div>
+                                    <p class="title">
+                                        Доступ к курсам заканчивается одновременно с программой.
+                                    </p>
+                                </div>
+                            </details>
+                            <button class="btn__add" id="btnAdd"></button>
+                            <details>
+                                <summary>Итоговое задание</summary>
+                                <div>
+                                    <div class="add-curs__section">
+                                        <label for="nameCurs">
+                                            Название
+                                        </label>
+                                        <input type="text" id="nameCurs" name="nameCurs">
+                                    </div>
+                                    <div class="file__block">
+                                        <label for="test">
+                                            <img src="#" alt="прикрепить" class="file__icon">
+                                            <span>Приектрепите задание</span>
+                                        </label>
+                                        <input type="file" name="test" class="test__input">
+                                    </div>
+                                </div>
+                            </details>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </main>
+        <footer class="footer">
+            <div class="footer__container">
+                 <div>
+                    <p class="tel">8 800 551-79-49</p>
+                    <p class="adres">г. Йошкар-Ола, ул. Вознесенская, 110</p>
+                 </div>
+                 <div>
+                    <nav class="social__link">
+                        <ul>
+                            <li><a href="https://mail.ru"><img src="../dop/media/mail.png" alt="link Mail"></a></li>
+                            <li><a href="https://telegram.org"><img src="../dop/media/telegram.png" alt="link Telegram"></a></li>
+                            <li><a href="https://vk.com"><img src="../dop/media/vk.png" alt="link Vk"></a></li>
+                        </ul>
+                    </nav>
+                    <p class="copiright">Pro Curs © 2023</p>
+                 </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

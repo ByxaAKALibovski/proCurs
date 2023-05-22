@@ -182,7 +182,7 @@
 .application__sub{
     max-width: 630px;
     max-height: fit-content;
-    max-height: 300px;
+    /* max-height: 300px; */
     background-color: #66FCF1;
     border-radius: 20px;
     color: #1F2833;
@@ -219,8 +219,6 @@
 }
 
 .app__link{
-    max-width: 239px;
-    height: 45px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -230,7 +228,13 @@
     line-height: 144.9%;
     border-radius: 10px;
     margin-left: 53px;
+    max-width: 239px;
     margin-bottom: 74px;
+    height: 45px !important;
+    transition: 0.4s ease-in-out;
+}
+.app__link:hover{
+    box-shadow: 0px 3px 5px 2px rgba(50, 50, 50, 0.5);
 }
 
 .application__description{
@@ -251,6 +255,7 @@
     align-items: center;
     flex-wrap: wrap;
     padding-top: 200px;
+    counter-reset: num;
 }
 
 .application__description li{
@@ -264,7 +269,8 @@
 }
 
 .application__description li::before{
-    content: "01";
+    content: '0'counter(num);
+    counter-increment: num;
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -290,4 +296,50 @@
     width: 592px;
     color: #66FCF1;
     font-size: 15px;
+}
+
+.rev__container{
+    width: 100%;
+    height: fit-content;
+    padding-top: 80px;
+    padding-bottom: 200px;
+    background-color: #F5F5F5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.rev__container p{
+    font-family: 'Montserrat-Medium';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 144.9%;
+    display: flex;
+    letter-spacing: 0.1em;
+    max-width: 1440px;
+    width: 100%;
+    justify-content: start;
+    text-align: start;
+    align-items: center;
+    padding-left: 80px;
+    padding-bottom: 32px;
+}
+
+.rev__container h2{
+    font-family: 'Montserrat-SemiBold';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 144.9%;
+    display: flex;
+    letter-spacing: 0.1em;
+    max-width: 1440px;
+    width: 100%;
+    justify-content: start;
+    text-align: start;
+    align-items: center;
+    padding-left: 80px;
+    padding-bottom: 100px;
 }
