@@ -56,6 +56,9 @@ ol,ul{
 
 /* Componets */
 
+.d-none{
+    display: none !important;
+}
 
 .blue__link{
     display: flex;
