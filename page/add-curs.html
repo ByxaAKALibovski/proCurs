@@ -41,86 +41,77 @@
                         <label for="nameCurs">
                             Название
                         </label>
-                        <input type="text" id="nameCurs" name="nameCurs">
-                    </div>
-                    <div class="add-curs__section">
-                        <label for="startCurs">
-                            Начало курса
-                        </label>
-                        <input type="date" id="startCurs" name="startCurs">
-                    </div>
-                    <div class="add-curs__section">
-                        <label for="finishCurs">
-                            Окончание курса
-                        </label>
-                        <input type="datetime" id="finishCurs" name="finishCurs">
+                        <input required type="text" id="nameCurs" name="nameCurs">
                     </div>
                     <div class="add-curs__section">
                         <label for="descCurs">
                             Описание
                         </label>
-                        <input type="text" id="descCurs" name="descCurs">
+                        <textarea required name="descCurs" id="descCurs" cols="30" rows="10"></textarea>
                     </div>
                     <div class="add-curs__section">
                         <label for="duractionCurs">
                             Длительность курса
                         </label>
-                        <input type="text" id="duractionCurs" name="duractionCurs">
+                        <div class="duraction__block">
+                            <input required class="duraction" type="text" id="duractionCurs" name="duractionCurs"><span>ак.часов</span>
+                        </div>
                     </div>
                     <div class="add-curs__section">
                         <label for="themsCurs">
                             Темы курса
                         </label>
-                        <input type="text" id="themsCurs" name="themsCurs">
+                        <input required type="text" id="themsCurs" name="themsCurs">
                     </div>
 
                     <div class="file__seection">
                         <div class="acardion__container">
-                            <details>
-                                <summary>Как получить доступ к материалам после оплаты?</summary>
-                                <div>
-                                    <p class="title">
-                                        Ответ на вопрос
-                                    </p>
-                                </div>
-                                <div>
-                            </details>
-                            <details>
-                                <summary>Не могу найти добавленные курсы, где они находятся?</summary>
-                                <div>
-                                    <p class="title">
-                                        Ответ на вопрос
-                                    </p>
-                                </div>
-                            </details>
-                            <details>
-                                <summary>Как долго сохраняется доступ к курсам?</summary>
-                                <div>
-                                    <p class="title">
-                                        Доступ к курсам заканчивается одновременно с программой.
-                                    </p>
-                                </div>
-                            </details>
-                            <button class="btn__add" id="btnAdd"></button>
+                            <div class="modul__container">
+                                <details class="moduls__block" data-id="1">
+                                    <summary>1 модуль</summary>
+                                    <div class="det__block">
+                                        <div class="name_file__block">
+                                            <label for="nameModul1">
+                                                Название
+                                            </label>
+                                            <input type="text" id="nameModul1" name="nameModul1" required>
+                                        </div>
+                                        <div class="file__block">
+                                            <label class="input-file">
+                                                <img src="../dop/media/screp.png" alt="">
+                                                <input required class="file__curs" accept=".jpg, .jpeg, .png, .doc, .docx, .xls, .scv, .ppt, .txt, .rtf, .pdf, .tiff" type="file" name="modulFile1">
+                                                <span>Прикрепите файл</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </details>
+                            </div>
+                            <div class="btn__section__modul">
+                                <div class="btn__add__modul btn__modul" id="btnAdd"></div>
+                                <div class="btn__del__modul btn__modul" id="btnDel"></div>
+                            </div>
                             <details>
                                 <summary>Итоговое задание</summary>
-                                <div>
-                                    <div class="add-curs__section">
-                                        <label for="nameCurs">
+                                <div class="det__block">
+                                    <div class="name_file__block">
+                                        <label for="nameTask">
                                             Название
                                         </label>
-                                        <input type="text" id="nameCurs" name="nameCurs">
+                                        <input required type="text" id="nameTask" name="nameTask">
                                     </div>
                                     <div class="file__block">
-                                        <label for="test">
-                                            <img src="#" alt="прикрепить" class="file__icon">
-                                            <span>Приектрепите задание</span>
+                                        <label class="input-file">
+                                            <img src="../dop/media/screp.png" alt="">
+                                            <input required class="file__curs" accept=".jpg, .jpeg, .png, .doc, .docx, .xls, .scv, .ppt, .txt, .rtf, .pdf, .tiff" type="file" name="taskFile">
+                                            <span>Прикрепите задание</span>
                                         </label>
-                                        <input type="file" name="test" class="test__input">
                                     </div>
                                 </div>
                             </details>
                         </div>
+                    </div>
+                    <div class="btn__submit">
+                        <button type="submit">Создать курс</button>
                     </div>
                 </form>
             </div>
@@ -144,5 +135,7 @@
             </div>
         </footer>
     </div>
+
+    <script src="../dop/js/main.js"></script>
 </body>
 </html>
